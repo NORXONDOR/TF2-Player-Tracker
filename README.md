@@ -11,20 +11,26 @@ The two scripts function alone, but are designed to be run together:
 
 
 # Running the program
-Installing dependencies:
-```pip install pyvis ipython requests rcon clrprint```
-
 Ensure your Steam Web API Key (https://steamcommunity.com/dev/apikey) is set in 'api_key.txt' before running.
 
 TEMPORARY: Ensure RCON_PASSWORD is changed in 'player_log.py' and matches that of +rcon_password in TF2's launch options. More information is listed underneath the imports in player_log.py.
 
+Installing dependencies:
+```
+pip install pyvis ipython requests rcon clrprint
+```
+
 To run player adder:
-```cd "path/to/folder"```
-```python player_adder.py```
+```
+cd "path/to/folder"
+python player_adder.py
+```
 
 To run player log:
-```cd "path/to/folder"```
-```python player_log.py```
+```
+cd "path/to/folder"
+python player_log.py
+```
 
 
 # Samples images
@@ -32,10 +38,11 @@ White (0) represents tracked, green (1) - trusted, yellow (2) - suspicious and r
 
 Server player log using local database.
 
-
+![player_log](https://github.com/NORXONDOR/TF2-Player-Tracker/assets/100261200/0028c1cf-35cb-47e7-8c75-679b356624d5)
 
 
 Player friendship network loaded from database (names removed for preserving anonymity).
 
+![friendship_network](https://github.com/NORXONDOR/TF2-Player-Tracker/assets/100261200/47ebae60-54cd-4048-9f78-14a89eb42614)
 
 
