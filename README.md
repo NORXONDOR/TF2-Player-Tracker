@@ -33,7 +33,7 @@ python player_log.py
 ```
 
 
-# Samples images
+# Sample images
 White (0) represents tracked, green (1) - trusted, yellow (2) - suspicious and red (3) - bot/cheater.
 
 Server player log using local database.
