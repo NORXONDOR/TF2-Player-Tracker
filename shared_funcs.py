@@ -1,17 +1,15 @@
-def convert_3_to_64(steamid3):
-    """
-    Converts a steamID3 to steamID64.
-    e.g U:1:1063092633 -> 76561199023358361.
-    
-    Args:
-        (string) steamid3: steamID3.
-    Return:
-        (string) steamid64: steamID64.
-    """
-    steamid3_num = steamid3[4:]
-    steamid64 = str(int(steamid3_num) + 76561197960265728)
-    
-    return steamid64
+"""
+tf2-player-tracker: shared_funcs.py
+
+A shared set of imports, constants and functions used by player_adder.py and player_log.py.
+"""
+import os
+import requests
+import time
+
+
+VERSION = "1.1.0"
+
 
 def get_api_key():
     """
@@ -32,3 +30,10 @@ def get_api_key():
             raise Exception("APIKeyError: Key provided in 'api_key.txt' is invalid. Key must be a 32 character hex code (e.g 'CCA45C7367A7B52CF1E50E2096134082'). Ensure key is placed directly after 'STEAM_API_KEY='.")
     
     return steam_api_key
+    
+
+def clear():
+    """
+    Clears console.
+    """
+    os.system('cls' if os.name=='nt' else 'clear')
